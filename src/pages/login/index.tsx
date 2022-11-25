@@ -22,11 +22,11 @@ export const Login = () => {
 
 
 
-    useEffect(() => {
-        if (token != '') {
-            navigate('/list')
-        }
-    }, [])
+    // useEffect(() => {
+    //     if (token != '') {
+    //         navigate('/list')
+    //     }
+    // }, [])
 
     const onSubmit: SubmitHandler<dataTypeLogin> = async (data) => {
         try {

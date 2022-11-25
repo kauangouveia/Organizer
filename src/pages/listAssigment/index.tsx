@@ -25,10 +25,7 @@ export const ListAssignment = () => {
 
     const getTasks = async () => {
         const token = localStorage.getItem('@token')
-      
-
-        
-
+    
             try {
                 const token = localStorage.getItem('@token')
 
@@ -45,10 +42,10 @@ export const ListAssignment = () => {
     }
 
     useEffect(() => {
-        if (token === null){    
-            navigate('/')
-            return
-        }
+        // if (token === null){    
+        //     navigate('/')
+        //     return
+        // }
         getTasks()
     }, [])
 

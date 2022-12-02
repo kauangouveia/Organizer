@@ -23,6 +23,11 @@ export const ContainerForm = styled.form`
     align-items: center;
     flex-direction: column;
  
+
+    .Register{
+        margin-top: 1rem;
+}
+
     input{
         width: 300px;
         height: 50px;
@@ -83,6 +88,8 @@ export const ContainerAboutUs = styled.div`
         height: 50%;
         border-radius: 10%;
     }
+
+ 
 `
 export const MakeLogin = styled.div`
     width: 1280px;

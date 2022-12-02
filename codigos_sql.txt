@@ -1,0 +1,24 @@
+create database organizer;
+
+use organizer;
+
+create table tb_user(
+	id_user integer primary key auto_increment,
+	name varchar(255) not null,
+    email varchar(255) not null,
+    password varchar(255) not null,
+    cpf varchar(255) not null,
+	created_at datetime default now(),
+	finished_at datetime default null
+);
+
+create table tb_task(
+	id_task integer primary key auto_increment,
+	priority varchar(100) not null,
+    task varchar(255) not null,
+	created_at datetime default now(),
+	finished_at datetime default null,
+    id_user int
+);
+
+select * from tb_user;

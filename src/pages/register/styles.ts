@@ -23,6 +23,9 @@ export const ContainerForm = styled.form`
     align-items: center;
     flex-direction: column;
  
+
+
+
     input{
         width: 300px;
         height: 50px;
@@ -52,5 +55,10 @@ export const ContainerForm = styled.form`
         border-radius: 10%;
 
     }
+
+
+
+
 `
+
 

@@ -37,7 +37,6 @@ export const Task = ({ priority, task, date, id }: taskData) => {
                 <p>{date.split('T')[0]}</p>
             </Styles.DateAsk>
             <Styles.ActionsAsk>
-                <img src={updateTask} alt='update' />
                 <img src={deleteTask} alt='remove' onClick={() => { removeItem(id) }} />
             </Styles.ActionsAsk>
         </Styles.ContainerList>

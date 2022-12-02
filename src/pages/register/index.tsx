@@ -38,10 +38,10 @@ export const Register = () => {
                 <Style.ContainerRegister>
                     <Style.ContainerForm onSubmit={handleSubmit(onSubmit)}>
                         <img alt="logo" src={cube} />
-                        <input type='text' placeholder="Seu Nome" {...register('name')} />
-                        <input type='text' placeholder="Seu CPF" {...register('cpf')} />
-                        <input type='e-mail' placeholder="Seu E-mail" {...register('email')} />
-                        <input type='password' placeholder="Sua Senha" {...register('password')} />
+                        <input type='text' placeholder="Seu Nome" {...register('name')} required />
+                        <input type='text' placeholder="Seu CPF" {...register('cpf')} required />
+                        <input type='e-mail' placeholder="Seu E-mail" {...register('email')} required />
+                        <input type='password' placeholder="Sua Senha" {...register('password')} required />
                         <button>CADASTRAR-SE</button>
                     </Style.ContainerForm>
                 </Style.ContainerRegister>

@@ -52,6 +52,7 @@ export const Login = () => {
                         <input type='e-mail' placeholder="Seu E-mail" {...register('email')} />
                         <input type='password' placeholder="Sua Senha" {...register('password')} />
                         <button>ENTRAR</button>
+                        <button onClick={()=>{  navigate('/register')}} className='Register'>REGISTRAR-SE</button>
                     </Style.ContainerForm>
                     <Style.ContainerAboutUs>
                         <img alt="check calendar" src={cube} />
